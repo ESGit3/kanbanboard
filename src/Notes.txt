@@ -1,0 +1,5 @@
+If prev or next is clicked, then remove the task from the person, and add it to the array of the person 1 above or 1 below.
+
+If the id of the person is at 1 or the length of this.state.people, then you can remove prev/next.
+
+const loadUsers = ids => ids.map(id => users.find(user => user.id === id) || null);

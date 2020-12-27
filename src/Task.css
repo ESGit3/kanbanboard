@@ -1,0 +1,20 @@
+.container {
+    border: black 2px solid;
+    display: inline;
+    padding: 20px;
+    margin: 3px;
+}
+
+.prev {
+    display: inline;
+}
+
+.label {
+    display: inline;
+    padding: 0 2rem;
+}
+
+.next {
+    display: inline;
+}
+
