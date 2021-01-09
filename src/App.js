@@ -30,11 +30,17 @@ function App() {
     setKanban(temp);
   }
 
+  function removeTodo(col, id) {
+    const temp = [...kanban];
+    temp[col].tasks.splice(id, 1);
+    setKanban(temp);
+  }
+
   return (
     <>
       {kanban.map((person, index) => {
         return (
-            <Column data={person} index={index} add={addTodo} />
+            <Column data={person} index={index} add={addTodo} remove={removeTodo}/>
         );
       })}
     </>
