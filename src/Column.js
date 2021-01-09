@@ -2,22 +2,22 @@ import React from "react";
 import Task from "./Task";
 
 const Column = (props) => {
-    const data = props.content[1];
+    const data = props.data;
 
     function todoPrompt() {
-        const task = prompt();
+        const task = window.prompt();
 
         if (task !== null || task !== "") {
-            props.addTodo(data.id, task);
+            props.add(props.index, task);
         }
     }
 
     return (
         <div>
             <h1>{data.name}</h1>
-            {data.tasks.map(task => {
+            {data.tasks.map((task, index) => {
                 return(
-                   <Task task={task} id={data.id}/>
+                   <Task task={task} key={index} column={props.index} />
                 );
             })}
             <button onClick={todoPrompt}>Add Task</button>

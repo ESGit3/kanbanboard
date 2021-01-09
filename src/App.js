@@ -1,58 +1,44 @@
-import React from "react";
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 import Column from "./Column";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+const people = [
+  {
+    name: "Winnie",
+    tasks: ["hello", "world"],
+  },
+  {
+    name: "Bob",
+    tasks: ["goodbye", "world"],
+  },
+  {
+    name: "Thomas",
+    tasks: ["today", "tomorrow"],
+  },
+  {
+    name: "George",
+    tasks: ["yesterday", "lol"],
+  },
+];
 
-    this.state = {
-      people: {
-        person1: {
-          name: "Winnie",
-          tasks: ["foo", "bar"],
-          id: 1
-        },
-        person2: {
-          name: "Bob",
-          tasks: ["foo", "bar"],
-          id: 2
-        },
-        person3: {
-          name: "Thomas",
-          tasks: ["foo", "bar"],
-          id: 3
-        },
-        person4: {
-          name: "George",
-          tasks: ["foo", "bar"],
-          id: 4
-        }
-      }
-    }
+function App() {
+  const [kanban, setKanban] = useState(people);
+
+  function addTodo(id, val) {
+    const temp = [...kanban];
+    temp[id].tasks.push(val);
+    setKanban(temp);
   }
 
-  addTodo(id, val) {
-    const tempPerson = Object.entries(this.state.people).find(person => person[1].id === id);
-    tempPerson[1].tasks.push(val);
-    console.log(tempPerson[1].tasks);
-    this.setState({});
-  }
-
-  render() {
-    return (
-        <div>
-          {Object.entries(this.state.people).map((person) => {
-            return (
-                <Column content={person} addTodo={this.addTodo.bind(this)}/>
-            );
-          })}
-          {
-            console.log(Object.entries(this.state.people).find(person => person[1].id === 2))
-          }
-        </div>
-    );
-  }
+  return (
+    <>
+      {kanban.map((person, index) => {
+        return (
+            <Column data={person} index={index} add={addTodo} />
+        );
+      })}
+    </>
+  );
 }
 
 export default App;

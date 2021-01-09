@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b513a54-bcf7-424c-ad4b-e80f11218bf5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Column.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Column.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Column.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +51,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -86,6 +81,9 @@
       <updated>1608760606606</updated>
       <workItem from="1608760608843" duration="10689000" />
       <workItem from="1608912064002" duration="5061000" />
+      <workItem from="1609027677484" duration="619000" />
+      <workItem from="1609082890270" duration="3151000" />
+      <workItem from="1610146247294" duration="2709000" />
     </task>
     <servers />
   </component>
@@ -96,6 +94,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2112" y="41" key="#App.js" timestamp="1610231191178">
+      <screen x="1440" y="-180" width="1920" height="1080" />
+    </state>
+    <state x="2112" y="41" key="#App.js/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1610231191178" />
     <state x="2000" y="171" key="#ESLint" timestamp="1608787609108">
       <screen x="1440" y="-34" width="1920" height="1080" />
     </state>
@@ -124,9 +126,10 @@
     </state>
     <state width="1899" height="286" key="GridCell.Tab.0.right/0.0.1440.900/1440.-34.1920.1080@1440.-34.1920.1080" timestamp="1608833247424" />
     <state width="1419" height="286" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1608873029945" />
-    <state x="1909" y="145" key="SettingsEditor" timestamp="1608789672703">
-      <screen x="1440" y="-34" width="1920" height="1080" />
+    <state x="1909" y="-1" key="SettingsEditor" timestamp="1610228494624">
+      <screen x="1440" y="-180" width="1920" height="1080" />
     </state>
+    <state x="1909" y="-1" key="SettingsEditor/0.0.1440.900/1440.-180.1920.1080@1440.-180.1920.1080" timestamp="1610228494624" />
     <state x="1909" y="145" key="SettingsEditor/0.0.1440.900/1440.-34.1920.1080@1440.-34.1920.1080" timestamp="1608789672703" />
   </component>
 </project>
